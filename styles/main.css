@@ -1,3 +1,13 @@
 body {
-    background-color: #6ec975;
+    background-color: #f0ffc2;
+    color: #506dfe;
+    
+}
+.text {
+    background-color:#fff ; 
+    color: #09e5f1;
+}
+#text {
+    background-color: #506dfe;
+    color: #000;
 }
