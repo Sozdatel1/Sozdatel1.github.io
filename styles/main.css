@@ -1,17 +1,17 @@
 body {
     background-color: #f0ffc2;
-    color: #506dfe;
+    color: #1c3eea;
     
 }
 .text {
-    background-color:#fff ; 
+    background-color:#fa0303 ; 
     color: #09e5f1;
 }
 #text {
-    background-color: #506dfe;
-    color: #000;
+    background-color: #ffffff;
+    color: #ff0000;
 }
 .site {
     background-color: #0fbccc;
-    color: #bb1e1e;
+    color: #4a2e2e;
 }
