@@ -19,7 +19,7 @@ body {
     list-style-type: none; /* Убираем маркеры списка */
     margin: 0;
     padding: 0;
-    background-color: #feffc600;
+    background-color: #ffffff40;
     overflow: hidden;
 }
 
@@ -81,12 +81,22 @@ body {
 
 
 .container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;          /* Центрирует контейнер по горизонтали */
-  padding: 20px;
-  text-align: center;      /* Центрирует текст и изображение внутри */
-  box-sizing: border-box;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;          /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    
+}
+.container-fact {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;          /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    color:#fa0303
 }
 
 .container h3 {
