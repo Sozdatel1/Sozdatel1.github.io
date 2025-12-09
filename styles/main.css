@@ -8,6 +8,7 @@ body {
     color: #09e5f1;
 }
 #text {
+    font-family: Verdana, Geneva, Tahoma, Times, serif, Arial, sans-serif;
     background-color: #6e333300;
     color: #018ad9;
 }
@@ -99,13 +100,15 @@ body {
     color:#fa0303
 }
 .container-second {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif, Arial, sans-serif, sans-serif;
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;          /* Центрирует контейнер по горизонтали */
     padding: 20px;
     text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
-    color:#2ea2ea
+    color:#00a9f2
+    
 }
 
 .container h3 {
