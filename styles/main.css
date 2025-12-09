@@ -98,6 +98,15 @@ body {
     box-sizing: border-box;
     color:#fa0303
 }
+.container-second {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;          /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    color:#2ea2ea
+}
 
 .container h3 {
   margin-bottom: 20px;     /* Отступ снизу, чтобы отделить текст от изображения */
