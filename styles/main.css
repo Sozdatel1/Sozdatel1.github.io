@@ -81,13 +81,51 @@ body {
 }
 
 
-.container {
+.container-glavnaya {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif, Arial, sans-serif, sans-serif;
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;          /* Центрирует контейнер по горизонтали */
     padding: 20px;
     text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
+    background-color: #696f1b12;
+    color: #0073ff;
+    
+}
+.content-glavnaya {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    width: 90%;
+    max-width: 1000px;
+    margin:0 auto ;          /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    background-color: #696f1b00;
+    color:#121415
+    }
+
+.container-one {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif, Arial, sans-serif, sans-serif;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;          /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    background-color: #696f1b12;
+    color: #00a9f2 
+}  
+.content-one {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    width: 90%;
+    max-width: 1000px;
+    margin:0 auto ;          /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    background-color: #696f1b00;
+    color:#6f6f6f
     
 }
 .container-fact {
@@ -97,6 +135,7 @@ body {
     padding: 20px;
     text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
+    background-color: #696f1b12;
     color:#fa0303
 }
 .container-second {
@@ -107,10 +146,42 @@ body {
     padding: 20px;
     text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
+    background-color: #696f1b12;
     color:#00a9f2
     
+    
 }
-
+.content-second {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    width: 90%;
+    max-width: 1000px;
+    margin:0 auto ;          /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    background-color: #696f1b00;
+    color:#7f8182
+    
+}
+.container {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    width: 90%;
+    max-width: 1000px;
+    margin:0 auto ;          /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    background-color: #696f1b12;
+    color:#7f8182
+    
+}
 .container h3 {
   margin-bottom: 20px;     /* Отступ снизу, чтобы отделить текст от изображения */
 }
+
+.footer {
+    background-color: #22222200;
+    color: #0400ff;
+    padding: 20px;
+    text-align: center;
+    }
