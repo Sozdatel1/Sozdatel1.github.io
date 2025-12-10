@@ -105,6 +105,47 @@ body {
     color:#121415
     }
 
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* две равные колонки */
+  gap: 1px; /* пространство между карточками */
+  max-width: 1000px; /* или по вашему */
+  margin: 0 auto; /* центрирование */
+  box-shadow: 0 4px 8px rgb(1, 242, 255);
+  background-color: #ffffff00;
+}
+.card {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgb(0, 242, 255);
+  border-radius: 10px;
+  background-color: #fff;
+}    
+
+.fancy-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.fancy-table th, .fancy-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.fancy-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.fancy-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transform: translateX(5px);
+}    
+
 .container-one {
     font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif, Arial, sans-serif, sans-serif;
     width: 90%;
