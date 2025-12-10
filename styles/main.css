@@ -137,13 +137,13 @@ body {
 }
 
 .fancy-table th {
-  background-color: #4CAF50;
+  background-color: #00fff2;
   color: white;
 }
 
 .fancy-table tbody tr:hover {
-  background-color: #f1f1f1;
-  transform: translateX(5px);
+  background-color: #3da8a325;
+  transform: translateX(3px);
 }    
 
 .container-one {
