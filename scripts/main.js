@@ -44,3 +44,22 @@ function checkHoliday() {
 
 // Запускаем при загрузке страницы
 window.onload = checkHoliday;
+document.addEventListener('DOMContentLoaded', () => {
+  const rows = document.querySelectorAll('#infoTable tbody tr');
+
+  rows.forEach(row => {
+    row.addEventListener('click', () => {
+      // Анимация уменьшения
+      row.style.transition = 'transform 0.9s ease';
+
+      // Уменьшаем размер
+      row.style.transform = 'scale(0)';
+
+      // После окончания анимации увеличиваем обратно
+      setTimeout(() => {
+        row.style.transform = 'scale(1)';
+      }, 300); // длительность анимации уменьшения в миллисекундах
+
+    });
+});
+});
