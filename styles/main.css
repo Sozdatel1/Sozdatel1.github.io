@@ -158,15 +158,29 @@ body {
     color: #00a9f2 
 }  
 .content-one {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif, sans-serif;
+    text-align: left;
+    margin-bottom: 20px; /* отступ снизу между абзацами */
     width: 90%;
     max-width: 1000px;
-    margin:0 auto ;          /* Центрирует контейнер по горизонтали */
+    margin: auto ;          /* Центрирует контейнер по горизонтали */
     padding: 20px;
-    text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
     background-color: #696f1b00;
-    color:#6f6f6f
+    color:#7c7c7c;
+#content-one1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif, sans-serif;
+    text-align: left;
+    margin-bottom: 20px; /* отступ снизу между абзацами */
+    width: 90%;
+    max-width: 1000px;
+    margin: 0, auto;         /* Центрирует контейнер по горизонтали */
+    padding: 20px;
+    text-align: center;    /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    background-color: #696f1b00;
+    color:#6f6f6f    
+}    
     
 }
 .container-fact {
