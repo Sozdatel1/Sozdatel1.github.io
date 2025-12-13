@@ -163,26 +163,41 @@ body {
     margin-bottom: 20px; /* отступ снизу между абзацами */
     width: 90%;
     max-width: 1000px;
-    margin: auto ;          /* Центрирует контейнер по горизонтали */
+    margin: 0 auto;          /* Центрирует контейнер по горизонтали */
     padding: 20px;
     box-sizing: border-box;
     background-color: #696f1b00;
     color:#7c7c7c;
-#content-one1 {
+}
+#content-one-novosty {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif, sans-serif;
     text-align: left;
+    text-indent: 20px;
     margin-bottom: 20px; /* отступ снизу между абзацами */
     width: 90%;
     max-width: 1000px;
-    margin: 0, auto;         /* Центрирует контейнер по горизонтали */
-    padding: 20px;
-    text-align: center;    /* Центрирует текст и изображение внутри */
+    margin: 0 auto;         /* Центрирует контейнер по горизонтали */
+    padding: 0px;
+    text-align: center;
     box-sizing: border-box;
     background-color: #696f1b00;
-    color:#6f6f6f    
-}    
-    
+    color:#666666    
+} 
+.card-grid-one {
+  display: grid;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  grid-template-columns: repeat(2, 1fr); /* две равные колонки */
+  gap: 1px; /* пространство между карточками */
+  max-width: 1000px; /* или по вашему */
+  margin: 0 auto; /* центрирование */
+  box-shadow: 0 4px 8px rgba(1, 242, 255, 0);
+  background-color: #ff000000;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0);
 }
+    
+
 .container-fact {
     width: 90%;
     max-width: 1000px;

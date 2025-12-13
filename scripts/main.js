@@ -1,4 +1,4 @@
-// holiday.js
+
 
 const holidays = {
   // Месячные и ежегодные праздники
