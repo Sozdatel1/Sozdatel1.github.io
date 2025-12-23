@@ -3,6 +3,7 @@ body {
     background-image: url('/img//Без\ названия\ \(1\).jfif');
     color: #173aee;
     cursor: url('/img/cursor.png') 0 0, auto !important;
+     font-family: "Rubik Gemstones", system-ui;
    
    
 }
@@ -47,6 +48,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
 
 #text {
     font-family: Verdana, Geneva, Tahoma, Times, serif, Arial, sans-serif;
+    font-family: "Rubik Gemstones", system-ui;
     background-color: #6e333300;
     color: #018ad9;
 }
@@ -64,12 +66,14 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     padding: 0;
     background-color: #ffffffc8;
     overflow: hidden;
+    font-family: "Rubik Gemstones", system-ui;
 }
 
 .dropdown-menu li {
     float: left; /* Размещаем пункты меню горизонтально */
     background-color: #e0f45c00;
     color: #000;
+    font-family: "Rubik Gemstones", system-ui;
     
 }
 
@@ -79,6 +83,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none; /* Убираем подчеркивание сылок */
+    font-family: "Rubik Gemstones", system-ui;
 }
 
 .dropdown-menu li a:hover:not(.active) {
@@ -156,6 +161,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   margin: 0 auto; /* центрирование */
   box-shadow: 0 4px 8px rgb(1, 242, 255);
   background-color: #ffffff00;
+ 
 }
 .card {
   padding: 20px;
