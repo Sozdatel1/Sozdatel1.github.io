@@ -347,6 +347,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   img {
   max-width: 100%; /* изображение не будет шире контейнера */
   height: auto; /* сохранение пропорций изображения */
+  border-radius: 80%;
   }
   .card-grid-one {
     max-width: 20px;
