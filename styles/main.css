@@ -378,6 +378,9 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     padding: 20px;
     text-align: center;
     }
+img {
+  max-width: 100%;
+}    
 @media (max-width: 600px) {
   .container-glavnaya {
     max-width: 400px;
