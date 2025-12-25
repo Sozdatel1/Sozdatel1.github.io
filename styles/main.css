@@ -3,8 +3,8 @@ body {
     background-image: url('/img/Без\ названия\ \(4\)норм.jpg');
     color: #173aee;
     cursor: url('/img/cursor.png') 0 0, auto !important;
-     font-family: "Rubik Gemstones", system-ui;
-   
+    font-family: "Rubik Gemstones", system-ui;
+    margin: 0;
    
 }
 a, button, .clickable,  img, .fireflies-containerr, td {
@@ -45,12 +45,22 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   left: 0; /* измените п желанию */
   z-index: 9999;
 }
-
+.header-content {
+            display: flex;
+            align-items: center; /* Выравнивает элементы по вертикали по центру */
+            gap: 15px; /* Добавляет немного пространства между картинкой и текстом */
+             
+        }
+        
+.header-content h1, .header-content p {
+            margin: 1;
+        }
 #text {
     font-family: Verdana, Geneva, Tahoma, Times, serif, Arial, sans-serif;
     font-family: "Rubik Gemstones", system-ui;
-    background-color: #6e333300;
+    background-color: #ff020200;
     color: #018ad9;
+    margin: 80;
 }
 #site {
     background-color: #b254e400;
