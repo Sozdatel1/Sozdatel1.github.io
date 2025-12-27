@@ -440,6 +440,9 @@ img {
   white-space: normal;        
   padding: 3px; /* уменьшенные отступы */
   }
+.logo {
+  display: none;
+}
 
 
 
