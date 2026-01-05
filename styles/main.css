@@ -452,7 +452,6 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   max-width: 950px;
   background-color: #ffffffdb;
   text-align: left; 
-  
 }
 .container h3 {
   margin-bottom: 20px;     /* Отступ снизу, чтобы отделить текст от изображения */
