@@ -433,11 +433,11 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     color:#373737
 }
 .content-why a {
-   text-decoration: none;
-   background-color: #cae5f400;
-   color: #594ade;
-   box-shadow: #00fff2;
-   
+  text-decoration: none;
+  background-color: #cae5f400;
+  color: #594ade;
+  box-shadow: #00fff2;
+
 }
 .content-why a:hover {
   color: #ff0000;
@@ -451,7 +451,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   color: #4f4f4f;
   max-width: 950px;
   background-color: #ffffffdb;
-   
+  text-align: left; 
   
 }
 .container h3 {
