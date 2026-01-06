@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   rows.forEach(row => {
     row.addEventListener('click', () => {
       // Анимация уменьшения
-      row.style.transition = 'transform 0.9s ease';
+      row.style.transition = 'transform 0.7s ease';
 
       // Уменьшаем размер
       row.style.transform = 'scale(0)';
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // После окончания анимации увеличиваем обратно
       setTimeout(() => {
         row.style.transform = 'scale(1)';
-      }, 300); // длительность анимации уменьшения в миллисекундах
+      }, 700); // длительность анимации уменьшения в миллисекундах
 
     });
 });
