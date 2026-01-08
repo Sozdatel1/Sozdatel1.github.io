@@ -4,6 +4,9 @@ body {
     background-size: 700% 400%;
     animation: gradientAnimation 15s ease infinite;
     min-height: 100vh;
+    padding: 0px;
+    margin: 0;
+    cursor: url('/img/cursor.png') 0 0, pointer;
 }
 a, button, .clickable,  img, .fireflies-containerr, td {
     cursor: url('/img/cursor-perchatka.png') 0 0, pointer !important;
@@ -94,6 +97,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
             background-color: #fcfbbde1;
             box-shadow: #000;
             z-index: 20000000000;
+              
               
           }   #ffffffdb
            
@@ -231,7 +235,8 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
     background-color: #ffffffdb;
-    color: #0073ff;
+    /* Пример "свежего" градиента 2026 */
+
     
 }
 .content-glavnaya {
@@ -254,6 +259,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   margin: 0 auto; /* центрирование */
   box-shadow: 0 4px 8px rgb(1, 242, 255);
   background-color: #ffffff00;
+  
  
 }
 .card {
@@ -269,6 +275,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   border-collapse: collapse;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
+  
 }
 
 .fancy-table th, .fancy-table td {
@@ -385,7 +392,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;          /* Центрирует контейнер по горизонтали */
-    padding: 100px 0px 0px 0px;
+    padding: 100px 20px 20px 20px;
     text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
     background-color: #ffffffdb;
@@ -431,19 +438,34 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   font-family: 'Times New Roman', Times, serif, sans-serif;
     width: 90%;
     max-width: 1000px;
-    margin:0 auto ;          /* Центрирует контейнер по горизонтали */
+    margin: 0 auto ;          /* Центрирует контейнер по горизонтали */
     padding: 20px;
     text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
     background-color: #5b5b5b00;
     color:#373737
 }
-.content-why a {
+.content-why2 {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto ;          /* Центрирует контейнер по горизонтали */
+    padding: 0px;
+    text-align: center;      /* Центрирует текст и изображение внутри */
+    box-sizing: border-box;
+    background-color: #03c0ff84;
+     background: linear-gradient(-550deg, #fffb00, #ff0000, #ff0000, #8d76ffab);
+    background-size: 700% 400%;
+    color:#373737
+}
+.content-why2 a {
   text-decoration: none;
   background-color: #cae5f400;
-  color: #594ade;
+  color: #2600ff;
   box-shadow: #00fff2;
 
+}
+.content-why2 img {
+  width: 100%;
 }
 .content-why a:hover {
   color: #ff0000;
@@ -517,7 +539,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
 img {
   max-width: 100%;
 }    
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .container-glavnaya {
     max-width: 400px;
     overflow-x: hidden;
@@ -566,28 +588,28 @@ img {
   display: none;
 }
 .container-glavnaya {
-  padding: 0px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
 }
 .container {
-  padding: 150px 0px 0px 0px;
+  padding: 300px 0px 0px 0px;
 }
 .container-fact {
-  padding: 150px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
 }
 .container-one {
-  padding: 150px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
 }
 .container-second {
-  padding: 150px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
 }
 .school {
-  padding: 150px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
 }
 .container-holiday {
-  padding: 150px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
 }
 .container-why {
-  padding: 150px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
 }
 .light-bulbs {
    padding: 73px 0px 0px 0px;
@@ -598,5 +620,6 @@ img {
 }
 .new-year img {
     width: 300;
+    padding: 20px 0px 0px 0px;
 }
 }
