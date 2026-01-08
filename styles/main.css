@@ -1,12 +1,9 @@
 body {
-    background-color: #f0ffc2;
-    background-image: url('/img/Без\ названия\ \(4\)норм.jpg');
-    color: #173aee;
-    cursor: url('/img/cursor.png') 0 0, auto !important;
-    font-family: "Rubik Gemstones", system-ui;
-    margin: 0;
    
-   
+    background: linear-gradient(-4500000deg, #eeff00, #000000, #fff700, #76edff5f);
+    background-size: 700% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    min-height: 100vh;
 }
 a, button, .clickable,  img, .fireflies-containerr, td {
     cursor: url('/img/cursor-perchatka.png') 0 0, pointer !important;
@@ -15,6 +12,11 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     background-color:#fa0303 ; 
     color: #09e5f1;
 
+}
+.new-year {
+  position: fixed;
+  display: flex;
+  padding: 80px 0px 0px 0px;
 }
 .light-bulbs {
   position: relative;
@@ -92,20 +94,20 @@ a, button, .clickable,  img, .fireflies-containerr, td {
             background-color: #fcfbbde1;
             box-shadow: #000;
             z-index: 20000000000;
-         
+              
           }   #ffffffdb
-        
+           
         
         
 .header-content h1, .header-content p {
-            margin: 1;
+           margin: 0px;
         }
 #text {
     font-family: Verdana, Geneva, Tahoma, Times, serif, Arial, sans-serif;
     font-family: "Rubik Gemstones", system-ui;
     background-color: #ff020200;
     color: #018ad9;
-    margin: 80;
+    margin: 0;
 }
 #site {
     background-color: #b254e400;
@@ -120,6 +122,8 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     position: relative;          /* Нужно для позиционирования подсказки */
     display: inline-block;
     background-color: #ffffff00;
+  margin: 0px;
+  padding: 0;
     
 }
 
@@ -128,6 +132,8 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   transition: transform 0.3s ease;
   transform: scale(1.05);
   transition: transform 0.5s ease;
+  padding: 0px;
+  margin: 0px;
 }
 
 
@@ -136,7 +142,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
 .dropdown-menu ul {
     list-style-type: none; /* Убираем маркеры списка */
     margin: 0;
-    padding: 0;
+    padding: 0px;
     background-color: #ffffff00;
     overflow: hidden;
     font-family: "Rubik Gemstones", system-ui;
@@ -157,10 +163,12 @@ a, button, .clickable,  img, .fireflies-containerr, td {
 
 
 .dropdown-menu li a {
-    display: block;
+    display: flex;
+    align-items: center; 
     color: rgb(0, 200, 255);
     text-align: center;
-    padding: 22px 16px;
+    padding: 24px 16px;
+    margin: 0px 0px 0px 0px;
     text-decoration: none; /* Убираем подчеркивание сылок */
     font-family: "Rubik Gemstones", system-ui;
      transition: transform 0.3s ease;
@@ -168,9 +176,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
 
 .dropdown-menu li a:hover:not(.active) {
     background-color: #fcfa86;
-     transform: scale(1.1);
-    transition: transform 0.2s ease;
-    transform: scale(1.1);
+    
 
 }
 
@@ -520,7 +526,7 @@ img {
   img {
   max-width: 100%; /* изображение не будет шире контейнера */
   height: auto; /* сохранение пропорций изображения */
-  border-radius: 80%;
+ 
   }
   .card-grid-one {
     max-width: 20px;
@@ -560,7 +566,7 @@ img {
   display: none;
 }
 .container-glavnaya {
-  padding: 150px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .container {
   padding: 150px 0px 0px 0px;
@@ -585,5 +591,12 @@ img {
 }
 .light-bulbs {
    padding: 73px 0px 0px 0px;
+}
+.new-year {
+  padding: 250px 0px 0px 0px;
+  
+}
+.new-year img {
+    width: 300;
 }
 }
