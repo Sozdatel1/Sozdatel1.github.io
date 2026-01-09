@@ -1,7 +1,5 @@
-
-
 const holidays = {
-  // Месячные и ежегодные праздники
+
   
   "01-01": "Новый год",
   "01-07": "Православное Рождество",
@@ -136,3 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
     container.appendChild(light);
   }
 });
+window.onload = function() {
+    setTimeout(function() {
+      document.getElementById('cookieAlert').style.display = 'block';
+    }, 3000); // задержка в миллисекундах
+  }

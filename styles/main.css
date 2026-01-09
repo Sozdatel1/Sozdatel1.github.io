@@ -7,6 +7,7 @@ body {
     padding: 0px;
     margin: 0;
     cursor: url('/img/cursor.png') 0 0, pointer;
+    
 }
 a, button, .clickable,  img, .fireflies-containerr, td {
     cursor: url('/img/cursor-perchatka.png') 0 0, pointer !important;
@@ -236,6 +237,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     box-sizing: border-box;
     background-color: #ffffffdb;
     /* Пример "свежего" градиента 2026 */
+    color: #03a3ff;
 
     
 }
@@ -257,13 +259,58 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   gap: 1px; /* пространство между карточками */
   max-width: 1000px; /* или по вашему */
   margin: 0 auto; /* центрирование */
-  box-shadow: 0 4px 8px rgb(1, 242, 255);
+  box-shadow: 0 4px 8px rgba(1, 242, 255, 0);
   background-color: #ffffff00;
-  
- 
 }
+.cards-grid a {
+  text-decoration: none;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+.cards-grid a:hover {
+  background-color: #ffe60050;
+  border-radius: 50%;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+
+}
+.notification {
+    display: none; /* скрываем изначально */
+    position: fixed; /* или absolute, если нужен внутри определёного блка */
+    z-index: 9999; /* выше, чем у остального контента */
+    bottom: 0 ;             /* внизу */
+    right: 0;   
+    background-color: rgba(68, 78, 114, 0.89); /* прозрачный фон */
+    border-radius: 15px 15px 2px 15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  .notification p {
+    margin-bottom: 10px;
+  }
+  .notification a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .accept-button {
+    background-color: #4CAF50; /* зеленая кнопка */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .accept-button:hover {
+    background-color: #45a049;
+  }
 .card {
-  padding: 20px;
+  padding: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
   border-radius: 10px;
   background-color: #fff;
@@ -274,7 +321,8 @@ a, button, .clickable,  img, .fireflies-containerr, td {
   margin: 20px auto;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.242);
+ 
   
 }
 
