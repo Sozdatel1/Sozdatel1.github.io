@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
     container.appendChild(light);
   }
 });
-window.onload = function() {
+window.addEventListener('load', function() {
     setTimeout(function() {
       document.getElementById('cookieAlert').style.display = 'block';
-    }, 3000); // задержка в миллисекундах
-  }
+    }, 3000);
+});
