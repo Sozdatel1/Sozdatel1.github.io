@@ -62,25 +62,6 @@ function checkHoliday() {
 
 // Запускаем при загрузке страницы
 window.onload = checkHoliday;
-document.addEventListener('DOMContentLoaded', () => {
-  const rows = document.querySelectorAll('#infoTable tbody tr');
-
-  rows.forEach(row => {
-    row.addEventListener('click', () => {
-      // Анимация уменьшения
-      row.style.transition = 'transform 0.7s ease';
-
-      // Уменьшаем размер
-      row.style.transform = 'scale(0)';
-
-      // После окончания анимации увеличиваем обратно
-      setTimeout(() => {
-        row.style.transform = 'scale(1)';
-      }, 700); // длительность анимации уменьшения в миллисекундах
-
-    });
-});
-});
 
 const snowContainer = document.getElementById('snow');
 
@@ -113,27 +94,7 @@ function createSnowflake() {
 
 // Создавать снежинки регулярно
 setInterval(createSnowflake, 30);
-document.addEventListener('DOMContentLoaded', function() {
-  const container = document.getElementById('light-container');
-  const numLights = 25;
-  const colors = ['c1', 'c2', 'c3', 'c4'];
 
-  for (let i = 0; i < numLights; i++) {
-    const light = document.createElement('div');
-    light.classList.add('light-bulb', colors[i % colors.length]);
-    
-    // Генерируем случайную длительность анимации (от 1 до 3 секунд)
-    const duration = Math.random() * 2 + 1; 
-    // Генерируем случайную задержку анимации (от 0 до 3 секунд)
-    const delay = Math.random() * 3; 
-
-    // Устанавливаем сгенерированные значения для каждого огонька
-    light.style.animationDuration = `${duration}s`;
-    light.style.animationDelay = `${delay}s`;
-
-    container.appendChild(light);
-  }
-});
 window.addEventListener('load', function() {
     setTimeout(function() {
       document.getElementById('cookieAlert').style.display = 'block';

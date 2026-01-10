@@ -9,7 +9,7 @@ body {
     cursor: url('/img/cursor.png') 0 0, pointer;
     
 }
-a, button, .clickable,  img, .fireflies-containerr, td {
+a, button, .clickable,  img, .fireflies-containerr, td, th {
     cursor: url('/img/cursor-perchatka.png') 0 0, pointer !important;
 }
 .text {
@@ -259,9 +259,9 @@ a, button, .clickable,  img, .fireflies-containerr, td {
 
 .cards-grid {
   display: grid;
+  width: 90%;
   grid-template-columns: repeat(2, 1fr); /* две равные колонки */
-  gap: 1px; /* пространство между карточками */
-  max-width: 1000px; /* или по вашему */
+  gap: 1px; 
   margin: 0 auto; /* центрирование */
   box-shadow: 0 4px 8px rgba(1, 242, 255, 0);
   background-color: #ffffff00;
@@ -294,6 +294,7 @@ a, button, .clickable,  img, .fireflies-containerr, td {
     font-family: Arial, sans-serif;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
+
   .notification p {
     margin-bottom: 10px;
   }
@@ -338,13 +339,12 @@ a, button, .clickable,  img, .fireflies-containerr, td {
 }
 
 .fancy-table th {
-  background-color: #00fff2;
+  background: linear-gradient(to bottom, rgb(0, 166, 255) 0%,rgba(113,206,239,1) 50%,rgba(33, 181, 226, 0.741) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
   color: white;
 }
 
 .fancy-table tbody tr:hover {
-  background-color: #3da8a325;
-  transform: translateX(3px);
+  background: linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgb(219, 219, 219) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
 }    
 #snow {
   position: fixed;
