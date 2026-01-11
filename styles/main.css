@@ -510,7 +510,8 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
     color:#373737
 }
 .content-why2 a {
-  text-decoration: none;
+  /* text-decoration: none; */
+  text-decoration: underline;
   background-color: #cae5f400;
   color: #2600ff;
   box-shadow: #00fff2;
