@@ -236,7 +236,7 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;          /* Центрирует контейнер по горизонтали */
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0px 10px 0px;
     text-align: center;      /* Центрирует текст и изображение внутри */
     box-sizing: border-box;
     background-color: #ffffffdb;
@@ -261,7 +261,7 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
   display: grid;
   width: 90%;
   grid-template-columns: repeat(2, 1fr); /* две равные колонки */
-  gap: 1px; 
+  gap: 50px; 
   margin: 0 auto; /* центрирование */
   box-shadow: 0 4px 8px rgba(1, 242, 255, 0);
   background-color: #ffffff00;
@@ -285,7 +285,8 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
     z-index: 9999; /* выше, чем у остального контента */
     bottom: 0 ;             /* внизу */
     right: 0;   
-    background-color: rgba(68, 78, 114, 0.89); /* прозрачный фон */
+    background-color: rgba(68, 78, 114, 0.89);
+  
     border-radius: 15px 15px 2px 15px;
     padding: 20px;
     max-width: 600px;
@@ -303,7 +304,7 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
     text-decoration: underline;
   }
   .accept-button {
-    background-color: #4CAF50; /* зеленая кнопка */
+    background: linear-gradient(to bottom, rgba(55,182,0,1) 0%,rgba(55,182,0,1) 0%,rgba(34,144,0,1) 2%,rgba(64,202,0,1) 50%,rgba(55,182,0,1) 79%,rgba(55,182,0,1) 79%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */; /* зеленая кнопка */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -312,7 +313,8 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
     margin-top: 10px;
   }
   .accept-button:hover {
-    background-color: #45a049;
+    background-color: #000000;
+    color: #000;
   }
 .card {
   padding: 0px;
@@ -333,7 +335,7 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
 
 .fancy-table th, .fancy-table td {
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 2px solid #999999;
   text-align: left;
   transition: all 0.3s ease;
 }
