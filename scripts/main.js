@@ -102,7 +102,7 @@ window.addEventListener('load', function() {
 });
 document.addEventListener('DOMContentLoaded', () => {
     const factElement = document.getElementById('weekly-fact'); // Элемент, куда вы хотите вставить факт
-    const apiUrl = 'Factroom.ru'; // Замените на реальный адрес API
+    const apiUrl = 'https://www.factroom.ru/eda'; // Замените на реальный адрес API
 
     fetch(apiUrl)
         .then(response => response.json()) // Преобразуем ответ в формат JSON
