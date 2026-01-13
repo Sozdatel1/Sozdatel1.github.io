@@ -119,7 +119,7 @@ window.onload = checkHoliday;
 
 // // Запускаем при загрузке страницы
 // window.onload = checkFact;
-// const snowContainer = document.getElementById('snow');
+ const snowContainer = document.getElementById('snow');
 
 function createSnowflake() {
   const snowflake = document.createElement('div');

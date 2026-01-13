@@ -2,7 +2,8 @@ body {
    
     background: linear-gradient(-4500000deg, #eeff00, #000000, #fff700, #76edff5f);
     background-size: 700% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    /* animation: gradientAnimation 15s ease infinite; */
+       background-attachment: fixed; 
     min-height: 100vh;
     padding: 0px;
     margin: 0;
@@ -152,7 +153,15 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
     padding: 0px;
     background-color: #ffffff00;
     overflow: hidden;
-    font-family: "Rubik Gemstones", system-ui;
+    /* font-family: "Rubik Gemstones", system-ui; */
+    /* font-family: "Kosugi Maru", sans-serif; */
+    /* font-family: "Pacifico", cursive; */
+    /* font-family: "LXGW WenKai TC", cursive; */
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 300;
     padding: 0px 0px 0px 0px;
     box-shadow: #0400ff;
    
@@ -162,7 +171,12 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
     float: left; /* Размещаем пункты меню горизонтально */
     background-color: #f45c5c00;
     color: #000;
-    font-family: "Rubik Gemstones", system-ui;
+     /* font-family: "LXGW WenKai Mono TC", monospace; */
+     font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 300;
     transition: transform 0.3s ease;
    
 }
@@ -172,12 +186,20 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
 .dropdown-menu li a {
     display: flex;
     align-items: center; 
-    color: rgb(0, 200, 255);
+    color: rgb(0, 134, 192);
     text-align: center;
     padding: 24px 16px;
     margin: 0px 0px 0px 0px;
     text-decoration: none; /* Убираем подчеркивание сылок */
-    font-family: "Rubik Gemstones", system-ui;
+    
+     /* font-family: "LXGW WenKai TC" cursive; */
+     /* font-family: "LXGW WenKai Mono TC", monospace;
+   font-weight: 8; */
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 300;
      transition: transform 0.3s ease;
 }
 
