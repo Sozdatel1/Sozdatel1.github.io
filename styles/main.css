@@ -1,3 +1,8 @@
+html {
+    container-type: scroll-state;
+    /* scroll-timeline: --page-scroll block; */
+    height: 100%;
+}
 body {
    
     background: linear-gradient(-4500000deg, #eeff00, #000000, #fff700, #76edff5f);
@@ -93,17 +98,41 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
   z-index: 9999;
 }
 .header-content {
-               position: fixed;
-            display: flex;
-              align-items: center; /* Выравнивает элементы по вертикали по центру */
-             gap: 15px;/* Добавляет немного пространства между картинкой и текстом */
-            background-color: #fcfbbde1;
-            box-shadow: #000;
-            z-index: 20000000000;
-              
-              
-          }   #ffffffdb
-           
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center; /* Выравнивает элементы по вертикали по центру */
+  gap: 15px;/* Добавляет немного пространства между картинкой и текстом */
+  /* background-color: #fcfbbde1; */
+  /* background-color: hsla(0, 0%, 60%, .14); */
+  background-color: hsla(62, 100%, 50%, 0.1);
+  backdrop-filter: blur(10px); 
+
+  transition: transform 0.6s ease;
+  /* animation: hideHeader linear both;
+  animation-timeline: scroll();
+  animation-range: 0px 20px; Анимация срабатывает на первых 200px скролла */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 20000000000;
+        }  
+        /* @keyframes hideHeader-content {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); } */
+  /* @container scroll-state(scroll-direction: down) {
+  .header-content {
+    transform: translateY(-100%);
+  }
+}
+
+@container scroll-state(scroll-direction: up) {
+  .header-content {
+    transform: translateY(110);
+  }
+} */
+.header--hidden {
+    transform: translateY(-109%);
+}        
         
         
 .header-content h1, .header-content p {
@@ -186,7 +215,7 @@ a, button, .clickable,  img, .fireflies-containerr, td, th {
 .dropdown-menu li a {
     display: flex;
     align-items: center; 
-    color: rgb(0, 134, 192);
+    color: rgb(0, 100, 143);
     text-align: center;
     padding: 24px 16px;
     margin: 0px 0px 0px 0px;
@@ -665,6 +694,9 @@ img {
   }
 .logo {
   display: none;
+}
+.dropdown-menu {
+  margin: 0;
 }
 .container-glavnaya {
   padding: 260px 0px 0px 0px;

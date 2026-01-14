@@ -119,7 +119,7 @@ window.onload = checkHoliday;
 
 // // Запускаем при загрузке страницы
 // window.onload = checkFact;
- const snowContainer = document.getElementById('snow');
+const snowContainer = document.getElementById('snow');
 
 function createSnowflake() {
   const snowflake = document.createElement('div');
@@ -155,4 +155,30 @@ window.addEventListener('load', function() {
     setTimeout(function() {
       document.getElementById('cookieAlert').style.display = 'block';
     }, 3000);
+});
+
+// Ждем загрузки DOM, чтобы скрипт точно нашел хедер
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header-content');
+    
+    // Порог срабатывания (через сколько пикселей скролла прятать хедер)
+    const scrollThreshold = 50;
+
+    window.addEventListener('scroll', () => {
+        // Текущее расстояние от верха страницы
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Логика направления
+        if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+            // Скролл вниз — добавляем класс скрытия
+            header.classList.add('header--hidden');
+        } else {
+            // Скролл вверх — убираем класс скрытия
+            header.classList.remove('header--hidden');
+        }
+
+        // Запоминаем позицию для следующего шага
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }, { passive: true }); // passive: true повышает плавность скролла
 });
