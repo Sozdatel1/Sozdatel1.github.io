@@ -485,6 +485,18 @@ left: 0;
   transform: scale(1.1);
 
 }
+.card-grid-table {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(2, 1fr); /* две равные колонки */
+  gap: 50px; 
+  margin: 0 auto; /* центрирование */
+  box-shadow: 0 4px 8px rgba(1, 242, 255, 0);
+  background-color: #ffffff00;
+}
+.card-grid-table img {
+  left: 0;
+}
 .notification {
     display: none; /* скрываем изначально */
     position: fixed; /* или absolute, если нужен внутри определёного блка */
