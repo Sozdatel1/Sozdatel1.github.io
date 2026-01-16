@@ -1,0 +1,105 @@
+.cards-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr); /* две равные колонки */
+  gap: 10px;
+   
+  left: 0;
+  text-align: left;
+  margin: 0; 
+  box-shadow: 0 4px 8px rgba(0, 242, 255, 0);
+  border-radius: 50px;
+  background-color: #ffffff00;
+}
+.cards-grid a {
+  width: 100%;
+  text-decoration: none;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+.cards-grid a:hover {
+  background-color: #ffe60039;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(107, 107, 107, 0.479); 
+  /* transform: scale(1.1);
+  transition: transform 0.5s ease;
+  transform: scale(1.1); */
+
+}
+.card-grid-table {
+  display: grid;
+  width: 10%;
+  grid-template-columns: repeat(2, 1fr); /* две равные колонки */
+  gap: 5px; 
+  margin: 0 auto; /* центрирование */
+  box-shadow: 0 4px 8px rgba(1, 242, 255, 0);
+  background-color: #ffffff00;
+}
+.card-grid-table img {
+  left: 0;
+  
+}
+@media (max-width: 800px) {
+.cards-grid {
+    max-width: 300px;
+    width: 90%;
+    max-width: 90%;
+    flex: 1 1 100%;
+    grid-template-columns: 1fr;
+  }
+
+.cards-hed {
+    max-width: 20px;
+    width: 90%;
+    max-width: 90%;
+    padding: 0px;
+    flex: 1 1 100%;
+    grid-template-columns: 1fr;
+}
+}
+.gov-service-container {
+    width: 90%; /* Общая ширина блока */
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.main-title {
+  font-size: 50px;
+}
+.main-layout {
+    display: grid;
+    /* Теперь контейнер делится на 2 части: 60% слева и 40% справа */
+    grid-template-columns: 9fr 1fr; 
+    gap: 15px; 
+    margin-bottom: 25px; /* Отступ до нижних кнопок */
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Сетка 2x2 внутри левой части */
+    gap: 10px; 
+}
+
+/* Стили правой панели */
+.right-panel {
+    background: #fff8f500; /* Цвет фона, как на картинке */
+    border-radius: 12px;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    min-height: 20px; /* Высота равна высоте 4 карточек */
+}
+
+.right-panel-icon {
+    font-size: 80px;
+    color: #ff583300; /* Цвет иконки (книжка) */
+    opacity: 0.7;
+}
+.service-card { background: #fdfdfd; padding: 15px; border-radius: 12px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between; width: 80%;   height: 100px; }
+.card-icon {position: absolute; top: 10px;    font-size:  24px; margin-bottom: 10px; background: #ffe5e000; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ff5733; }
+.service-card p { margin: 0; font-size: 14px; color: #444; line-height: 1.2; }
+

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursor.io</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/cards-glavnaya.css">
     <link rel="icon" href="img/kursor.png" type="image/png">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,25 +63,23 @@
             <li><a href="why.html">Что это?</a></li>
         </ul>
     </nav>
-    
     <!-- <img src="/img/ezgif.com-effects.gif" class="header-gif" width="40"> -->
     <div id="vacation-container">
-    <img src="img/img_stylez/рюкзак2.png" alt="icon" id="vacation-icon">
-    <div id="vacation-timer">Загрузка...</div>
-</div>
+      <img src="img/img_stylez/рюкзак2.png" alt="icon" id="vacation-icon">
+      <div id="vacation-timer">Загрузка...</div>
+    </div>
 
-<div id="school-header-final">
+  <!-- <div id="school-header-final">
     <div class="header-segment">👋 Добро пожаловать!</div>
     
     <div class="header-divider"></div>
 
     <div class="header-segment">
-        📅 До лета: <span id="summer-timer">загрузка...</span>
+        📅 До лета: <span id="summer-timer"><img src="/img/img_stylez/"</span>
     </div>
 
     <div class="header-divider"></div>
-
-    <!-- Погода Дубна: Самый простой информер, который не блокируется -->
+  
     <div class="header-segment">
         <div id="weather-dubna-box">
             <a href="https://www.meteoservice.ru" target="_blank" style="text-decoration:none; color:#333;">
@@ -87,32 +87,8 @@
             </a>
         </div>
     </div>
-</div>
+</div> -->
 
-<style>
-#school-header-final {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    padding: 10px 25px;
-    border: 3px solid #007bff; /* Ваш синий бордер */
-    border-radius: 50px;
-    background: #fff;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-.header-divider {
-    width: 2px;
-    height: 25px;
-    background: #007bff;
-    opacity: 0.2;
-}
-.header-segment {
-    white-space: nowrap;
-}
-</style>
 
 </header>
   
@@ -144,106 +120,112 @@
         <h1>Узнайте что-нибудь новое за 5 минут!<br> Здесь вас ждёт:</h1>
         </div> -->
     <div class="content-glavnaya">
-      <div style="max-width: 3000px; 
-            margin: 20px auto; 
+    <div class="gov-service-container">
+    <div class="main-title">Быстрый обзор сайта:</div>
+
+    <div class="main-layout">
+        <!-- ЛЕВАЯ ПОЛОВИНА: Сетка карточек -->
+        <div class="card-grid">
+            <!-- Карточка 1: Присвоение адреса -->
+            <div class="service-card">
+                <div class="card-icon icon-red">📍</div>
+                <p>Присвоение адреса</p>
+            </div>
+
+            <!-- Карточка 2: Разрешение на перевозку -->
+            <div class="service-card">
+                <div class="card-icon icon-red">🚚</div>
+                <p>Разрешение на перевозку...</p>
+            </div>
+
+            <!-- Карточка 3: Ваш таймер до лета -->
+            <div class="service-card">
+                <div class="card-icon icon-red">📅</div>
+                <p id="card-timer-text">До лета: -- дн.</p>
+            </div>
+
+            <!-- Карточка 4: Ваша погода в Дубне -->
+            <div class="service-card">
+                <div class="card-icon icon-red">🌡️</div>
+                <p id="card-weather-text">Дубна: ...°C</p>
+            </div>
+        </div>
+
+        <!-- ПРАВАЯ ПОЛОВИНА: Заглушка с иконкой, как на картинке -->
+        <div class="right-panel">
+            <div class="right-panel-icon">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижняя часть с переключателем режимов -->
+    
+</div>
+
+
+      <div class="cards-hed" style=" 
+            margin: 20px; 
             padding: 20px; 
             width: 90%;
-            box-shadow: 0 4px 8px rgba(0, 217, 255, 0.479); 
+            box-shadow: 0 4px 8px rgba(0, 217, 255, 0); 
             border-radius: 30px; 
-            border: 2px solid #050505;
+            border: 2px solid #05050500;
             color: #000; 
             text-align: left;
-            border-color: rgb(0, 0, 0);">
+            left: 0;
+            border-color: rgba(0, 0, 0, 0.307)">
             <h1>Быстрый обзор сайта:</h1>  
       <div class="cards-grid">
       
-        <a href ="fact.html">
-          <div style="max-width: 300px;  margin: 0px  auto; padding: 20px; box-shadow: 0 4px 8px rgb(255, 0, 0); border-radius: 30px; background: linear-gradient(to bottom, #ff7bdc 0%,#ff6c59 21%,#ff4027 49%,#ff5964 80%); color: #000000;  text-decoration: none; "><h3>Разнообразие фактов</h3>
+        <a href="fact.html">
+          <div style="max-width: 300px;  
+          margin: 0px ; 
+          padding: 20px; 
+          border-radius: 30px;
+          border: 2px solid #05050570;  
+          color: #000000;  
+          text-decoration: none;"><h3>Разнообразие фактов</h3>
           <p>Основная идея сайта в том, чтобы люди узнавали здесь что то новое.</p>
           </div>
         </a>
         <a href ="holiday.html">
-          <div style="max-width: 300px; margin: 0px auto;  border: 2px solid #05050570;padding: 20px; border-radius: 30px; color: #000;"><h3>Много праздников</h3>  
+          <div style="max-width: 300px; 
+          margin: 0px ;  
+          border: 2px solid #05050570;
+          padding: 20px; 
+          border-radius: 30px; 
+          color: #000;"><h3>Много праздников</h3>  
           <p>Во вкладке "Праздник дня"  вы увидите праздник на сегодня.</p>
           </div>
         </a>
         <a href ="two page.html">
-          <div style="max-width: 300px; margin: 0px auto; padding: 20px; border: 2px solid #05050570; border-radius: 30px; color: #000;"><h3>Главные моменты</h3>  
+          <div style="max-width: 300px;
+          margin: 0px 0px 0px 0px; 
+          padding: 20px; 
+          border: 2px solid #05050570; 
+          border-radius: 30px; 
+          color: #000;"><h3>Главные моменты</h3>  
           <p>В разделе "О самом главном" вы можете посмотреть актуальные новости.</p>
           </div>
         </a>
-        <a href="index.html">
           <div style="max-width: 300px; 
-          margin: 0px auto; 
+          margin: 0px 0px 0px 0px; 
           padding: 20px; 
-          box-shadow: 0 4px 8px rgba(0, 217, 255, 0.479); 
+          box-shadow: 0 4px 8px rgba(0, 217, 255, 0); 
           border-radius: 30px; 
           text-align: left;
           color: #000; 
           border: 2px solid #05050570;">
           <img src="img/погодаpng.png" width="30">  
-          <p>Новости о погоде</p>
+          
+          <a id="ms-informer-link-835dbdd0ea8b142a0aa6c19e95889924" class="ms-informer-link" href="https://www.meteoservice.ru/weather/overview/dubna">Погода в Дубне</a>
+          <script class="ms-informer-script" src="https://www.meteoservice.ru/informer/script/835dbdd0ea8b142a0aa6c19e95889924"></script>
+
           </div>
-        </a>
+        
       </div>
     </div>
-    <!-- Gismeteo информер для Дубны -->
-<div id="gsInformerID-11959" class="gsInformer" style="width:200px;height:40px">
-    <div class="gsdc">
-        <a href="https://www.gismeteo.ru/weather-dubna-11959/" target="_blank">Погода в Дубне</a>
-    </div>
-</div>
-<script async src="https://www.gismeteo.ru" type="text/javascript"></script>
-
-
-          <div style="max-width: 3000px; 
-            margin: 20px auto; 
-            padding: 20px; 
-            width: 90%;
-            box-shadow: 0 4px 8px rgba(0, 217, 255, 0.479); 
-            border-radius: 30px; 
-            color: #000; 
-            border-color: rgb(0, 0, 0);">
-            <h3>Быстрый обзор сайтррррррррррра:</h3>  
-              <div class="card-grid-table">
-                  <a href ="two page.html">
-                    <div style="max-width: 300px; 
-                    margin: 20px auto; 
-                    padding: 20px; 
-                    box-shadow: 0 4px 8px rgb(255, 247, 0); 
-                    border-radius: 30px; 
-                    background: linear-gradient(to bottom, #fff759 21%,#fff427 49%,#ffd859 77%); 
-                    color: #000;">
-                    <img src="img/погодаpng.png" width="30"> 
-                    <h2>Погода</h2>
-                    </div>
-                  </a>
-
-                  <a href ="two page.html">
-                    <div style="max-width: 300px; 
-                    margin: 20px auto; 
-                    padding: 20px; 
-                    box-shadow: 0 4px 8px rgb(255, 247, 0); 
-                    border-radius: 30px; 
-                    color: #000;"><img src="img/погодаpng.png" width="30"> 
-                    <h2>Погода</h2>
-                    </div>
-                  </a>
-
-                  <a href ="two page.html">
-                    <div style="max-width: 300px; 
-                    margin: 20px auto; 
-                    padding: 20px; 
-                    box-shadow: 0 4px 8px rgb(255, 247, 0); 
-                    border-radius: 30px; 
-                    color: #000;">
-                    <img src="img/погодаpng.png" width="30"> 
-                    <h2>Погода</h2>
-                    </div>
-                  </a>
-      
-        </div>
-        </div>
       
 
 <h2 style="text-align: center; margin-top: 15px;color: #00b7ff; margin: 30px 0px 0px 0px;">Информация о вкладках</h2>
